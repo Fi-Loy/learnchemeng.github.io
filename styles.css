@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+}
+.header{ /*Style Header Section*/
+    text-align: center;
+    padding: 20px;
+    background-color: beige;
+}
+.topnav{ /*Style Navigation Bar Section*/
+    overflow: hidden;
+    background-color: lightgray;
+}
+.topnav a{ /*Style Navigation Bar Links*/
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    display: block;
+    padding: 8px;
+    color: black;
+}
+.column{ /*Columns move to left*/
+    float: left;
+    padding: 10px;
+}
+.column.side{
+    width: 20%;
+}
+.column.middle{
+    width: 55%;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
+.flex-container{
+    display: flex;
+    background-color: dodgerblue;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex-container > a{
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+.tutorial-video{
+    height: auto;
+    width: 60%;
+    margin: auto;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+}
+li{
+    padding: 10px
+}
+
