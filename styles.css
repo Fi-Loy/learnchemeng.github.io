@@ -2,13 +2,15 @@ body{
     margin: 0;
 }
 .header{ /*Style Header Section*/
+    font-family: Helvetica, Arial,  sans-serif;
     text-align: center;
     padding: 20px;
-    background-color: beige;
+    background-color: rgb(75, 96, 80);
 }
 .topnav{ /*Style Navigation Bar Section*/
+    font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
-    background-color: lightgray;
+    background-color: gray;
 }
 .topnav a{ /*Style Navigation Bar Links*/
     float: right;
@@ -18,17 +20,25 @@ body{
     padding: 8px;
     color: black;
 }
+.topnav a:hover{
+    background-color: rgb(52, 52, 52);
+}
 .column{ /*Columns move to left*/
+    font-family: Helvetica, Arial,  sans-serif;
     float: left;
     padding: 10px;
 }
-.column.side{
+.column.side{ /*Left Column*/
+    font-family: Helvetica, Arial,  sans-serif;
     width: 20%;
 }
 .column.middle{
+    font-size: 20px;
+    font-family: Helvetica, Arial,  sans-serif;
     width: 55%;
 }
 .row::after{
+    font-family: Helvetica, Arial,  sans-serif;
     content: "";
     display: table;
     clear: both;
@@ -39,8 +49,9 @@ body{
     }
   }
 .flex-container{
+    font-size: small;
     display: flex;
-    background-color: dodgerblue;
+    background-color: rgb(191, 213, 236);
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -48,7 +59,7 @@ body{
     background-color: #f1f1f1;
     margin: 10px;
     padding: 20px;
-    font-size: 30px;
+    font-size: 20px;
 }
 .tutorial-video{
     height: auto;
